@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom_bootstrap.css') }}">
+    <title>{% block title %}Default Webpage{% endblock %}</title>
+    {% endblock %}
+</head>
+<body>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer class="footer">
+        {% block footer %}
+            &copy; Copyright 2025 by <a href="https://ethicsyber.github.io/html-portfolio/"><span class="ft-text">Christopher Moore</span></a>
+        {% endblock %}
+    </footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Cafes{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+
+    {% block content %}
+    <div class="cafes">
+        <div class="cafe-container">
+            
+            <div class="row">
+                <h1 class="title">CAFES</h1>
+                <div class="col">
+                    
+                    <table class="coffee-bg-blonde">
+                        {% for item in cafes %}
+                        <tbody>
+                            <td> {{ item['name'] }} </td>
+                            <td> {{ item['open'] }} </td>
+                            <td> {{ item['close'] }} </td>
+                            <td> {{ item['coffee'] }} </td>
+                            <td> {{ item['wifi'] }} </td>
+                            <td> {{ item['power'] }} </td>
+                        </tbody>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+            <div class="btn-spacing">
+                <a class="btn btn-rounded btn-coffee" href="{{ url_for('add') }}" role="button">Add Cafe</a>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+    

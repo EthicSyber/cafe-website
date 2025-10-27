@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %} {% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block content %}
+<div class="form-content coffee-bg-mdk">
+    <div class="form-container">
+        <form method="post" action="{{ url_for('add')}}">
+            
+                {{ cafe_form.hidden_tag() }}
+
+                {% for field in cafe_form %}
+                    <!--field.widget.input_type != 'hidden' will not display the hidden CSF token on the webpage-->
+                    {% if field.type != "SubmitField" and field.widget.input_type != "hidden"%}
+                        <div class="row">
+                            <div class="col1">
+                                {{ field.label }}
+                            </div>
+                            <div class="col2">
+                                {{ field }}
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+                <div class="row">
+                    {{ cafe_form.submit(class="btn btn-rounded btn-coffee") }}
+                </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

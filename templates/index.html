@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Cafe Website{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block content %}
+    <div class="idx-template">
+        <div class="idx-center">
+            <h1>💻 ☕️ <span class="title">Cipher Coffee</span> ☕️ 💻</h1>
+            <div class="">
+                <p>Looking for a Cafe, Want good Coffee, Need Wifi? </p>
+                <p>Checkout my Selection of Cafes with Wireless, Power, and Coffee Ratings!</p>
+                <div class="btn-spacing">
+                    <a class="btn btn-rounded btn-coffee" href="{{url_for('cafes')}}" role="button">Cafes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

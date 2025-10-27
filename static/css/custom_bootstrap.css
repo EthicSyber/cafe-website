@@ -1,0 +1,185 @@
+/* TODO: Ensure creating templates and testing CSS prior to DB creation and setup*/
+
+
+
+/* GENERIC TAG STYLINGS */
+
+html, body {
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+}
+
+body {
+    display: flexbox;
+    flex-direction: column;
+    background-color: #ece0d1;
+}
+main {
+    flex: 1;
+}
+
+form {
+    background-color: 1px solid black;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 15px 50px 25px;
+    border: 1px solid rgb(37, 34, 30);
+}
+
+a {
+    color: rgb(231, 203, 174);
+    text-decoration: none;
+}
+
+/* CLASS STYLINGS */
+
+    /*Index Template Styling*/
+    .idx-template {
+
+    }
+
+    .idx-template::before {
+        content: " ";
+        padding: 10% 50%;
+        background-color: #261a0c;
+
+    }
+
+    .idx-center {
+        text-align: center;
+        padding-top: 20%;
+    }
+
+
+    /*BLOCK-ELEM BG COLORS*/
+    .coffee-bg-mdk {
+        background-color: #291f15;
+    }
+    .coffee-bg-dk {
+        background-color: #170e05;
+    }
+    .coffee-bg-blonde {
+        background-color: #ece0d1;
+    }
+
+.title {
+    color: rgb(231, 211, 185);
+}
+.title:hover {
+    color:#4e463b
+}
+
+
+.form-content {
+    padding-top: 50px;
+    font-size: medium;
+}
+
+.form-container {
+    color: whitesmoke;
+    padding: 80px 150px 200px 100px;
+    width: 50%;
+}
+
+    .row {
+        padding: 20px;
+    }
+    .col1, .col2 {
+        width: 15%;
+        float: left;
+    }
+    .row .col1 {
+        padding-right: 5px;
+    }
+
+.cafes {
+    width: 100%;
+    background-color: #271b02;
+    padding: 10px 0px 60px 0px;
+}
+
+.cafe-container {
+    /* padding: 20px; */
+    margin-top: 120px;
+    margin-left: 21%;
+}
+
+
+
+/* FOOTER */
+.footer {
+    flex: auto;
+    color: rgb(14, 13, 13);
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    margin-top: 10%;
+    background-color: #8c775c;
+}
+    .ft-text:hover {
+        color:  #ffd5a2;
+    }
+
+/* BUTTON CLASS */
+.btn {
+    color: white;
+    background-color: rgb(176, 170, 170);
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid black;
+    padding: 8px 30px;
+}
+    /*BUTTON SPACING*/
+    .btn-spacing {
+        padding: 20px;
+    }
+
+    /*BUTTON STYLING*/
+    .btn-rounded {
+        border-radius: 8px;
+    }
+
+    /*BUTTON COLOR
+    syntax: btn-<color-style> {}
+    */
+    .btn-prime {
+        background-color: rgb(86, 86, 211);
+    }
+
+    .btn-caution {
+        color:black;
+        background-color: rgb(233, 237, 29);
+    }
+
+    .btn-complete {
+        background-color: rgb(32, 161, 32);
+    }  
+
+    .btn-danger {
+        background-color: rgb(213, 28, 28);
+    }
+
+    .btn-coffee {
+        background-color: #422e19;
+    }
+
+    .btn-coffee:hover {
+        background-color: #000000;
+    }
+
